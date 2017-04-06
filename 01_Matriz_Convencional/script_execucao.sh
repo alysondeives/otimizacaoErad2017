@@ -1,10 +1,10 @@
 #!/bin/bash
-gcc -o programa 01_Matriz_Convencional.c -fopenmp
+gcc -o programa 01_Matriz_Convencional.c -fopenmp -O2
 source ../default.sh
 for ((j=1; j <= $TAM; j++))
 do
 	echo "Executando Multiplicacao $j..."
-	./programa $ORDEM $ORDEM >> saida.txt
+	./programa $ORDEM $ORDEM &> saida.txt
 done
 rm programa
 

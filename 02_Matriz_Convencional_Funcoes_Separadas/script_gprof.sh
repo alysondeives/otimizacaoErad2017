@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -pg -o programa 02_Matriz_Convencional_Funcoes_Separadas.c -fopenmp
+gcc -pg -o programa 02_Matriz_Convencional_Funcoes_Separadas.c -fopenmp -O2
 source ../default.sh
 mkdir Gprof
 for ((j=1; j <= $TAM; j++))

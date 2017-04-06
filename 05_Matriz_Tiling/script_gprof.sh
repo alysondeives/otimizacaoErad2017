@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -pg -o programa 05_Matriz_Tiling.c -fopenmp
+gcc -pg -o programa 05_Matriz_Tiling.c -fopenmp -O2
 source ../default.sh
 NUM_ALG=7
 mkdir Gprof

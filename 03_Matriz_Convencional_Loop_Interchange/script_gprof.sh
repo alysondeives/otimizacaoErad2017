@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -pg -o programa 03_Matriz_Convencional_Loop_Interchange.c -fopenmp
+gcc -pg -o programa 03_Matriz_Convencional_Loop_Interchange.c -fopenmp -O2
 source ../default.sh
 NUM_ALG=6
 mkdir Gprof

@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -pg -o programa 06_Matriz_Tiling_Loop_Interchange.c -fopenmp
+gcc -pg -o programa 06_Matriz_Tiling_Loop_Interchange.c -fopenmp -O2
 source ../default.sh
 NUM_ALG=10
 mkdir Gprof

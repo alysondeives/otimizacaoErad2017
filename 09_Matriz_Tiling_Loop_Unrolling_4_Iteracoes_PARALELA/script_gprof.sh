@@ -1,7 +1,7 @@
 #!/bin/bash
-gcc -pg -o programa 09_Matriz_Tiling_Loop_Unrolling_4_Iteracoes_PARALELA.c -fopenmp
+gcc -pg -o programa 09_Matriz_Tiling_Loop_Unrolling_4_Iteracoes_PARALELA.c -fopenmp -O2
 source ../default.sh
-NUM_ALG=6
+NUM_ALG=10
 mkdir Gprof
 for ((i=1; i <= $NUM_ALG; i++))
 do

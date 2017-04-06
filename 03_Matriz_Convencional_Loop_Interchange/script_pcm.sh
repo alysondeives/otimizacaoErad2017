@@ -2,14 +2,14 @@
 gcc -o programa 03_Matriz_Convencional_Loop_Interchange.c -fopenmp -O2
 source ../default.sh
 NUM_ALG=6
-mkdir Perf
+mkdir PCM
 for ((i=1; i <= $NUM_ALG; i++))
 do
 	for ((j=1; j <= $TAM; j++))
 	do
 		echo "Executando Multiplicacao $i - $j..."
-		perf stat -e L1-dcache-loads,L1-dcache-load-misses ./programa $ORDEM $ORDEM $i &> $i.Perf_multiplicacao_$j.txt
-		mv $i.Perf_multiplicacao_$j.txt Perf
+		sudo ../Intel_PCM/pcm-master/./pcm.x -- programa $ORDEM $ORDEM $i &> $i.PCM_multiplicacao_$j.txt
+		mv $i.PCM_multiplicacao_$j.txt PCM
 	done
 done
 rm programa

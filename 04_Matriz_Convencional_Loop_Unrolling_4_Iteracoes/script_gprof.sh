@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -pg -o programa 04_Matriz_Convencional_Loop_Unrolling_4_Iteracoes.c -fopenmp
+gcc -pg -o programa 04_Matriz_Convencional_Loop_Unrolling_4_Iteracoes.c -fopenmp -O2
 source ../default.sh
 NUM_ALG=6
 mkdir Gprof

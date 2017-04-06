@@ -214,7 +214,6 @@ int main (int argc, char *argv[]) {
 			printf("%5lf\n", timeElapsed);
 			break;
 		default:
-			system("clear");
 			printf("Opcao Invalida! Tente Novamente!\n\n");
 			break;
 	}
